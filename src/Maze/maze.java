@@ -14,7 +14,6 @@ public class maze {
         fillMap(map,mapSize);
         fillMap(solution,mapSize);
         map[row][column] = 'x';
-        printMap(map,this.mapSize);
     }
 
     public void fillMap(char[][] myMap ,int mapSize){
@@ -56,7 +55,7 @@ public class maze {
         }
     }
 
-    private boolean isValidMove(String dir){
+    public boolean isThereAPit(String dir){
         if(dir.equals("R") || dir.equals("r")){
             return isMoveInsideMap(0,1, mapSize);
         }
@@ -73,7 +72,7 @@ public class maze {
         }
     }
     public void jumpOverPit(String dir) {
-        if(isValidMove(dir)) {
+        if(isThereAPit(dir)) {
             if(dir.equals("R") || dir.equals("r")) {
                 move(0, 2);
             } else if (dir.equals("L") || dir.equals("l")) {
@@ -149,7 +148,7 @@ public class maze {
         move(1, 0);
     }
 
-    private void fillSolution() {
+    public void fillSolution() {
         for (int i = 0; i < 6; i++) {
             solution[0][i] = '-';
         }
