@@ -1,6 +1,5 @@
 import Maze.Game;
 import Maze.maze;
-
 public class Main {
 
     public static void greetUser(){
