@@ -1,7 +1,6 @@
 import Maze.Game;
 import Maze.maze;
 public class Main {
-
     public static void greetUser(){
         System.out.println("Welcome to our game maze runner");
     }
