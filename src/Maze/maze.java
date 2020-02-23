@@ -24,7 +24,7 @@ public class maze {
         }
     }
 
-    /**   here I used method overloading to refresh the map ; */
+    /**here I used method overloading to refresh the map ; */
 
     public void printMap() {
         printMap(map,this.mapSize);
