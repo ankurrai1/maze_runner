@@ -70,6 +70,7 @@ public class Game {
     }
 
     public void runGame(){
+        
         while(moveCount < 100 ){
 
             String dir = askToMove();
@@ -95,6 +96,7 @@ public class Game {
     }
 
     public void startGame(){
+        
         try {
             runGame();
         }catch (Exception e ){
